@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Demonstração - WebSocket</title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div id="page-wrapper">
+    <h1>Calculadora Websocket</h1>
+    <p>Envie contas simples como: 2 + 2 ou 10 / 5</p>
+
+    <div id="status">Conectando...</div>
+
+    <ul id="messages"></ul>
+
+    <form id="message-form" action="#" method="post">
+      <textarea id="message" placeholder="Ex: 10 * 40... Dê um espaço entre o operando e operador" required></textarea>
+      <button type="submit">Calcular</button>
+      <button type="button" id="close">Finalizar conexão</button>
+    </form>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
